@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - American Barbershop</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="../Aula 2/style.css" >
+        
+       
+    </head>
+    <body>
+       <header class="titulo-principal">
+            <div class="caixa">    
+                <h1><img class= "logo" src="logo.png" alt="Logo da American BarberShop"> </h1>
+
+                <nav>
+                    <ul>
+                        <li><a href="../Aula 1/index.html">Home</a></li>
+                        <li><a href="../Aula 2/Produtos.html"> Produto</a></li>
+                        <li><a href="Contato.html"> Contato</a></li>
+                    </ul>
+                </nav>
+            </div>        
+       </header>
+       
+       <main class="contato">
+           <form>
+               <label for = "nomesobrenome">Nome e Sobrenome</label>
+               <input type="text" id="somesobrenome" class="input-padrao" required placeholder="Fulano de Tal"> 
+
+               <label for="email">Email</label>
+               <input type="email" id="email" class="input-padrao" required placeholder="email@email.com">
+
+               <label for="telefone">Telefone</label>
+               <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+               <label for="mensagem">Mensagem</label>
+               <textarea cols="64" rows="10" class="input-padrao"></textarea required>
+
+               <fieldset>
+                    <legend>Como prefere nosso contato?</legend>
+                    <label for="radio-email"> <input name ="contato" type="radio" value="email" id="radio-email" >Email</label>
+                    
+
+                    <label for="radio-telefone"> <input name ="contato" type="radio" value="telefone" id="radio-telefone" >Telefone</label>
+                    
+
+                    <label for="radio-Whatsapp"> <input name ="contato" type="radio" value="Whatsapp" id="radio-Whatsapp" checked>Whatsapp</label>                   
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por Email?</label>
+
+                <input type="submit" value="Enviar Formulário" class="Enviar">
+           </form>
+
+           <table>
+               <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td> 8h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Terça</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+           </table>
+       </main>
+
+       <footer>
+        <img class="rodapeImg" src="logo.png" alt="Logo da American BarberShop">   
+        <p class="Copyright">&copy; American Barbershop - 2022 </p>
+       </footer>
+    </body>
+</html>

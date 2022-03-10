@@ -1,11 +1,13 @@
 .titulo-principal{
-    background: #000000;
-    padding: 20px 0;
+    background: url(newyork.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 0;
 }
 
 .caixa{
     position: relative;
-    width: 1080px;
+    width: 1120px;
     margin: 0 auto;
 
 }
@@ -50,6 +52,11 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{
+    color: #2bd9f8;
+    text-decoration: underline;
+}
+
 .Produtos{
     width: 940px;
     margin:0 auto ;
@@ -65,9 +72,22 @@ nav a{
     padding: 30px 20px;
     box-sizing: border-box;
     border: 2px solid #000000;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 25px;
     
 }
+
+.Produtos li:hover{
+    border-color: #f8e90f;
+}
+
+.Produtos li:hover h2{
+    font-size: 35px;
+}
+
+.Produtos li:active{
+    border-color: #03f799;
+}
+
 
 .Produtos h2{
     font-size: 30px;
@@ -83,4 +103,24 @@ nav a{
     font-size: 22px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+footer{
+    background-image: url(backgroundbarber.jpg);
+    background-size: 1700px;
+    padding: 40px;
+    text-align: center;
+}
+
+.rodapeImg{
+    width: 25%;
+  
+    
+}
+
+.Copyright{
+    font-size: 35px;
+    color: #FFFFFF;
+    text-align: center;
+
 }
