@@ -1,5 +1,7 @@
 
-
+body{
+    font-family: 'Hubballi', cursive;;
+}
 #banner{
     width: 100%;
     border: 2px solid #000000;
