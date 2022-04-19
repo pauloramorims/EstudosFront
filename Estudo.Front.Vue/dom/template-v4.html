@@ -1,0 +1,22 @@
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <h1>{{titulo}}</h1>
+    <p>{{saudacao()}}</p>
+    <a v-bind:href="link">Google</a>
+</div>
+
+<script>
+    new Vue({
+    el:'#app', //essa instância do vue passa a controlar o trecho de HTML com esse elemento
+    data:{
+        titulo: 'Usando VueJs 2',
+        link: 'http://google.com'
+    },
+    methods:{
+        saudacao: function(){
+            return this.titulo 
+        }
+    }
+})
+</script>
