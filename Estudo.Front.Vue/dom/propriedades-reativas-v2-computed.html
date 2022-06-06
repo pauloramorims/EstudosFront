@@ -2,7 +2,7 @@
 
 <div id="app">
     <button v-on:click="aumentar">Aumentar</button>
-    <button v-on:click="contador2++">Aumentar 2</button>
+    <button v-on:click="contador2++">Aumentar</button>
     <button v-on:click="diminuir">Diminuir</button>
     <p>Contador: {{contador}} | {{contador2}}</p>
     <p>Resultado: {{resultado}}</p>
@@ -17,8 +17,8 @@
     },
     computed:{ //não precisa chamar mais a funcao como um método, e ela será chamada apenas quando for computada.
         resultado(){
-            return this.contador >=5 ? 
-                'Maior ou igual a 5' : 'Menor que 5'
+            return this.contador >= 5 ? 
+                'Maior ou igual a 5' : 'Menor que 5' 
         }
     },
     methods:{
