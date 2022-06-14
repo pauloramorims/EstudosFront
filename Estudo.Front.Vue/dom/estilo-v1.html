@@ -3,15 +3,21 @@
 <div id="app">
     <div class="demo" :class="{'c1' : aplicarC1}" 
         @click="aplicarC1 = !aplicarC1"></div>
-    <div class="demo"></div>
-    <div class="demo"></div>
+    <div class="demo":class="{'c2' : aplicarC2}" 
+        @click="aplicarC2 = !aplicarC2"></div>
+    <div class="demo" :class="{'c3' : aplicarC3}" 
+        @click="aplicarC3 = !aplicarC3"></div>
+
+    <button @click = "aplicarC3 = !aplicarC3; aplicarC2 = !aplicarC2; aplicarC1 = !aplicarC1 ">Click</button>
 </div>
 
 <script>
     new Vue({
     el:'#app', //essa instância do vue passa a controlar o trecho de HTML com esse elemento
     data:{
-        aplicarC1: false
+        aplicarC1: false,
+        aplicarC2: false,
+        aplicarC3: false
     }
     })
 </script>
