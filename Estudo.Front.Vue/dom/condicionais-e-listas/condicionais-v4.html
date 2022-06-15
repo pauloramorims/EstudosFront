@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <template v-if="logado">
+        <p> Usuário Logado: {{ nome }}</p>
+        <p> Perfil: ADM</p>
+    </template>
+    <p v-else-if="anonimo">Navegando com Anônimo</p>
+    <p v-else>Nenhum usuário logado</p>
+    <button @click="logado = !logado">
+        {{ logado ? 'Sair' : 'Entrar'}}
+    </button>
+    <input type="checkbox" v-model="anonimo">
+    <hr>
+    <footer v-show="logado">
+        Desenvolvido para você, {{nome}}!
+    </footer>
+
+    <footer v-show="!logado">
+        Desenvolvido para vocês
+    </footer>
+</div>
+
+<script>
+    new Vue({
+    el:'#app', //essa instância do vue passa a controlar o trecho de HTML com esse elemento
+    data:{
+        nome: 'Maria',
+        logado: false,
+        anonimo: false
+    }
+})
+</script>

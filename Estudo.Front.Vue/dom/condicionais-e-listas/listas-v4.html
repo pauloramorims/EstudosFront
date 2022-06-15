@@ -1,0 +1,45 @@
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<div id="app">
+    <ul>
+        <li v-for = "(cor, i) in cores" :teste='cor'> {{i+1}}) {{cor}}</li>
+    </ul>
+    <hr>
+    <div v-for = "(cor, i) in cores">
+        <h1> {{cor}}</h1>
+        <p>{{i}}</p>
+    </div>
+    <hr>
+    <ul>
+        <li v-for = "pessoa in pessoas">
+            <span v-for="(valor, chave, index) in pessoa">
+                {{ chave }} = {{ valor }} ({{index}}) 
+            </span><!--  deixa todos os elementos em uma linha no DOM -->
+        </li>
+    </ul>
+    <div v-for="n in 10"> {{n}}</div>
+</div>
+
+<script>
+    new Vue({
+    el:'#app', //essa instância do vue passa a controlar o trecho de HTML com esse elemento
+    data:{
+        cores: ['vermelho', 'verde', 'amarelo', 'azul'],
+        pessoas: [
+            {nome: 'Ana', idade: 26, peso: 59},
+            {nome: 'Gui', idade: 29, peso: 72}
+        ]
+    }
+})
+</script>
+
+<style>
+    ul {
+        list-style:none;
+    }
+
+    h1, p {
+        display: inline;
+    }
+</style>
